@@ -3,154 +3,154 @@
 // This way, the game state does not need to contain (and more importantly, pass back and forth), the JS describing the effects of each card.
 
 const commonItems = [
-  // {
-  //   name: ".18 Derringer",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: 'Small-Caliber Shot',
-  //       stat: 'Fight',
-  //       val: 1,
-  //     },
-  //     {
-  //       name: 'Concealed Threat',
-  //       stat: 'Sneak',
-  //       val: 1,
-  //     },
-  //   ],
-  //   description:
-  //     "Don't scoff: it's easy to hide, and most certainly still a gun.",
-  // },
-  // {
-  //   name: ".38 Revolver",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: 'Medium-Caliber Shot',
-  //       stat: 'Fight',
-  //       val: 2,
-  //     },
-  //   ],
-  //   description:
-  //     "You worry that the weapon may not be effective against the...thing, you saw, but you feel better with it in your bag all the same."
-  // },
-  // {
-  //   name: ".45 Automatic",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: 'Large-Caliber Shot',
-  //       stat: 'Fight',
-  //       val: 3,
-  //     },
-  //   ],
-  //   description: "A sizeable and sturdy handgun."
-  // },
-  // {
-  //   name: "Ancient Tome",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: 'Reference Text',
-  //       stat: 'Lore',
-  //       val: 2,
-  //     },
-  //   ],
-  //   description: "You don't want to know what kind of leather this is."
-  // },
-  // {
-  //   name: "Axe",
-  //   hands: 2,
-  //   buffs: [
-  //     {
-  //       name: 'Axing a Question',
-  //       stat: 'Fight',
-  //       val: 3,
-  //     },
-  //     {
-  //       name: 'Here\'s Johnny',
-  //       stat: 'Luck',
-  //       val: 1,
-  //     }
-  //   ],
-  //   description: "Good for all kinds of jobs, this one included."
-  // },
-  // {
-  //   name: "Bullwhip",
-  //   hands: 1,
-  //   description: "It belongs in a museum."
-  // },
-  // {
-  //   name: "Dusty Manuscript",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: 'Manuscript Notes',
-  //       stat: 'Luck',
-  //       val: 1,
-  //     },
-  //     {
-  //       name: 'Author\'s Forward',
-  //       stat: 'Lore',
-  //       val: 1,
-  //     }
-  //   ],
-  //   description:
-  //     "This forgotten and unfinished work may still yet be amongst the most important ever committed to the page."
-  // },
-  // {
-  //   name: "Tommy Gun",
-  //   hands: 2,
-  //   description: "An illegal instrument for filling the air with lead."
-  // },
-  // {
-  //   name: "Knife",
-  //   hands: 1,
-  //   buffs: [
-  //     {
-  //       name: "Cold Iron",
-  //       stat: "Fight",
-  //       val: 1,
-  //     }
-  //   ],
-  //   description:
-  //     "A cold iron blade, with which to slay demons and worse (Yesterday you used it to cut summer sausage)."
-  // },
-  // {
-  //   name: "Newspaper",
-  //   hands: 2,
-  //   buffs: [
-  //     {
-  //       name: 'Local Update',
-  //       stat: 'Luck',
-  //       val: 1,
-  //     },
-  //     {
-  //       name: 'Frame of Reference',
-  //       stat: 'Lore',
-  //       val: 1,
-  //     },
-  //     {
-  //       name: 'Covered Ops',
-  //       stat: 'Sneak',
-  //       val: 2,
-  //     }
-  //   ],
-  //   description:
-  //     "Good for both information and concealing one's face in public."
-  // },
-  // {
-  //   name: "Rebar",
-  //   hands: 2,
-  //   description:
-  //     "Monster + rebar = fubar."
-  // },
-  // {
-  //   name: "Shotgun",
-  //   hands: 2,
-  //   description:
-  //     "\"It don't look so scary now!\" - Old Man Vernicky"
-  // },
+  {
+    name: ".18 Derringer",
+    hands: 1,
+    buffs: [
+      {
+        name: 'Small-Caliber Shot',
+        stat: 'Fight',
+        val: 1,
+      },
+      {
+        name: 'Concealed Threat',
+        stat: 'Sneak',
+        val: 1,
+      },
+    ],
+    description:
+      "Don't scoff: it's easy to hide, and most certainly still a gun.",
+  },
+  {
+    name: ".38 Revolver",
+    hands: 1,
+    buffs: [
+      {
+        name: 'Medium-Caliber Shot',
+        stat: 'Fight',
+        val: 2,
+      },
+    ],
+    description:
+      "You worry that the weapon may not be effective against the...thing, you saw, but you feel better with it in your bag all the same."
+  },
+  {
+    name: ".45 Automatic",
+    hands: 1,
+    buffs: [
+      {
+        name: 'Large-Caliber Shot',
+        stat: 'Fight',
+        val: 3,
+      },
+    ],
+    description: "A sizeable and sturdy handgun."
+  },
+  {
+    name: "Ancient Tome",
+    hands: 1,
+    buffs: [
+      {
+        name: 'Reference Text',
+        stat: 'Lore',
+        val: 2,
+      },
+    ],
+    description: "You don't want to know what kind of leather this is."
+  },
+  {
+    name: "Axe",
+    hands: 2,
+    buffs: [
+      {
+        name: 'Axing a Question',
+        stat: 'Fight',
+        val: 3,
+      },
+      {
+        name: 'Here\'s Johnny',
+        stat: 'Luck',
+        val: 1,
+      }
+    ],
+    description: "Good for all kinds of jobs, this one included."
+  },
+  {
+    name: "Bullwhip",
+    hands: 1,
+    description: "It belongs in a museum."
+  },
+  {
+    name: "Dusty Manuscript",
+    hands: 1,
+    buffs: [
+      {
+        name: 'Manuscript Notes',
+        stat: 'Luck',
+        val: 1,
+      },
+      {
+        name: 'Author\'s Forward',
+        stat: 'Lore',
+        val: 1,
+      }
+    ],
+    description:
+      "This forgotten and unfinished work may still yet be amongst the most important ever committed to the page."
+  },
+  {
+    name: "Tommy Gun",
+    hands: 2,
+    description: "An illegal instrument for filling the air with lead."
+  },
+  {
+    name: "Knife",
+    hands: 1,
+    buffs: [
+      {
+        name: "Cold Iron",
+        stat: "Fight",
+        val: 1,
+      }
+    ],
+    description:
+      "A cold iron blade, with which to slay demons and worse (Yesterday you used it to cut summer sausage)."
+  },
+  {
+    name: "Newspaper",
+    hands: 2,
+    buffs: [
+      {
+        name: 'Local Update',
+        stat: 'Luck',
+        val: 1,
+      },
+      {
+        name: 'Frame of Reference',
+        stat: 'Lore',
+        val: 1,
+      },
+      {
+        name: 'Covered Ops',
+        stat: 'Sneak',
+        val: 2,
+      }
+    ],
+    description:
+      "Good for both information and concealing one's face in public."
+  },
+  {
+    name: "Rebar",
+    hands: 2,
+    description:
+      "Monster + rebar = fubar."
+  },
+  {
+    name: "Shotgun",
+    hands: 2,
+    description:
+      "\"It don't look so scary now!\" - Old Man Vernicky"
+  },
   {
     name: "Pack of Cigarettes",
     hands: 0,
