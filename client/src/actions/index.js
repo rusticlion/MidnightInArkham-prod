@@ -7,7 +7,7 @@ export const ALL_GAMES_RETRIEVED = "ALL_GAMES_RETRIEVED";
 export const SELECTED_INVESTIGATOR = "SELECTED_INVESTIGATOR";
 export const USER_PROF_RETRIEVED = "USER_PROF_RETRIEVED";
 
-const ROOT_URL = "http://localhost:5050";
+const ROOT_URL = "https://midnightinarkham.herokuapp.com";
 
 export const login = (username, password) => {
   return async dispatch => {
