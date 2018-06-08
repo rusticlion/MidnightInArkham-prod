@@ -20,13 +20,13 @@ class RegistrationPage extends Component {
             onChange={this.handleUsernameChange}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password goes here"
             value={this.state.password}
             onChange={this.handlePasswordChange}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Confirm password"
             value={this.state.confirmPassword}
             onChange={this.handleConfirmPasswordChange}

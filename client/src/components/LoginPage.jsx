@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class LoginPage extends Component {
   state = {
     username: 'Username here...',
-    password: 'Password here...',
+    password: 'qwert',
   };
 
   render() {
@@ -20,7 +20,7 @@ class LoginPage extends Component {
             onChange={this.handleUsernameChange}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password goes here"
             value={this.state.password}
             onChange={this.handlePasswordChange}
