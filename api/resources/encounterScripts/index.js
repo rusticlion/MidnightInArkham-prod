@@ -38,7 +38,7 @@ const { WestChurch } = require('./WestChurch');
 const { ChurchStreet } = require('./ChurchStreet');
 const { BaptistChurch } = require('./BaptistChurch');
 const { MiskatonicUniversityCampus } = require('./MiskatonicUniversityCampus');
-const { CollegeOfPhysicalSciences } = require('./CollegeOfPhysicalsciences');
+const { CollegeOfPhysicalSciences } = require('./CollegeOfPhysicalSciences');
 const { ResearchLibrary } = require('./ResearchLibrary');
 const { LectureHall } = require('./LectureHall');
 
