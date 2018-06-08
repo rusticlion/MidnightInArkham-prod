@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -23,6 +24,7 @@ const corsOptions = {
 server.use(helmet());
 server.use(bodyParser.json());
 server.use(cors(corsOptions));
+server.use(express.static(path.join(__dirname, 'client/build')));
 
 mongoose
   // .connect("mongodb://localhost/games")
